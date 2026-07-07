@@ -1,0 +1,28 @@
+# Node
+node_modules/
+dist/
+.vite/
+*.log
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Env
+.env
+.env.*
+!.envrc
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
