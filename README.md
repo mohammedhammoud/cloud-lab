@@ -9,6 +9,15 @@ Do not treat it as proof of exact real AWS behavior, especially for edge cases.
 Floci is the local AWS emulator.
 `direnv` loads Floci environment variables when you enter this repo.
 
+## Prerequisites
+
+- `floci`
+- `terraform`
+- `direnv`
+- `awscli`
+- `python3`
+- `node`
+
 ## Start Floci
 
 ```sh
