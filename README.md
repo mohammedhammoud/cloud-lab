@@ -12,12 +12,9 @@ Learning-in-public repo for small AWS + Terraform labs, run locally with Floci.
 
 ```text
 projects/
-  01-s3-basics/
-  02-iam-basics/
-  03-lambda-s3/
-  04-ec2-basics/
-  05-vpc-basics/
-  06-alb-ec2-basics/
+  <lab-name>/
+    README.md
+    terraform/
 tools/
   tf.sh
 ```
@@ -70,6 +67,7 @@ cd projects/01-s3-basics
 - `04-ec2-basics` — EC2 instance role, instance profile, user data, S3 access
 - `05-vpc-basics` — VPC, public subnet, route table, internet gateway, security group, EC2
 - `06-alb-ec2-basics` — ALB, target group, listener, security groups, EC2 backend
+- `07-alb-autoscaling` — ALB, launch template, auto scaling group, EC2 backend
 
 ## Security and cost
 
