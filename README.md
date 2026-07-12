@@ -68,6 +68,7 @@ cd projects/01-s3-basics
 - `05-vpc-basics` — VPC, public subnet, route table, internet gateway, security group, EC2
 - `06-alb-ec2-basics` — ALB, target group, listener, security groups, EC2 backend
 - `07-alb-autoscaling` — ALB, launch template, auto scaling group, EC2 backend
+- `08-ecs-fargate-alb` — ECS cluster, Fargate service, task definition, ALB backend
 
 ## Security and cost
 
