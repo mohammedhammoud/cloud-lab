@@ -72,6 +72,7 @@ cd projects/01-s3-basics
 - `09-ecs-ec2-alb` — ECS cluster, EC2 capacity, task definition, service, ALB backend
 - `10-step-functions` — Step Functions state machine with Lambda invoke workflow
 - `11-cloudfront-s3-oac` — CloudFront distribution, private S3 origin, OAC, bucket policy
+- `12-eventbridge` — EventBridge custom bus, rule, Lambda targets, invoke permissions
 
 ## Security and cost
 
