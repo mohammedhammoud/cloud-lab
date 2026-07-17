@@ -4,6 +4,8 @@ Basic CloudFront distribution serving content from a private S3 bucket using Ori
 
 This is a learning-in-public lab. It is meant to show how CloudFront, S3, Origin Access Control, bucket policies, and SigV4 work together, not to present a production-ready static website.
 
+This lab was verified in a real AWS account. It was not fully exercised in Floci because CloudFront support there does not yet cover the full Terraform lifecycle used here.
+
 ## Architecture
 
 ### Request flow

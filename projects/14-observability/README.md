@@ -2,6 +2,8 @@
 
 This lab creates a complete observability pipeline for an EC2 instance using CloudWatch, SNS, and Terraform.
 
+This lab was verified in a real AWS account. It was not positioned as a Floci-validated lab.
+
 The Terraform code was written manually to make sure I understand how EC2 monitoring, CloudWatch Agent, custom metrics, CloudWatch dashboards, alarms, IAM roles, log groups, and SNS notifications connect to each other.
 
 ## Resources

@@ -1,11 +1,12 @@
 # AWS Floci Lab
 
-Learning-in-public repo for small AWS + Terraform labs, run locally with Floci.
+Learning-in-public repo for small AWS + Terraform labs. Most are written for local Floci use, but not every lab was exercised end-to-end in Floci.
 
 ## Disclaimer
 
 - Floci emulates AWS locally.
 - Behavior can differ from real AWS.
+- Some labs were verified in a real AWS account instead of Floci when local support was incomplete or not directly exercised.
 - This repo is for learning and experimentation, not production.
 
 ## Repo structure
@@ -71,10 +72,10 @@ cd projects/01-s3-basics
 - `08-ecs-fargate-alb` — ECS cluster, Fargate service, task definition, ALB backend
 - `09-ecs-ec2-alb` — ECS cluster, EC2 capacity, task definition, service, ALB backend
 - `10-step-functions` — Step Functions state machine with Lambda invoke workflow
-- `11-cloudfront-s3-oac` — CloudFront distribution, private S3 origin, OAC, bucket policy
+- `11-cloudfront-s3-oac` — CloudFront distribution, private S3 origin, OAC, bucket policy — verified in real AWS
 - `12-eventbridge` — EventBridge custom bus, rule, Lambda targets, invoke permissions
 - `13-rds-private` — VPC, public EC2, private PostgreSQL RDS, DB subnet group, security groups
-- `14-observability` — EC2 observability pipeline with CloudWatch Agent, logs, metrics, dashboard, alarm, and SNS notifications
+- `14-observability` — EC2 observability pipeline with CloudWatch Agent, logs, metrics, dashboard, alarm, and SNS notifications — verified in real AWS
 
 ## Security and cost
 
@@ -93,4 +94,4 @@ GitHub Actions checks:
 - `terraform init -backend=false`
 - `terraform validate`
 
-Each Terraform lab is validated separately without real AWS credentials.
+CI only runs static Terraform validation without real AWS credentials. It does not prove end-to-end runtime behavior in Floci or real AWS.
