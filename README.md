@@ -6,7 +6,7 @@ Learning-in-public repo for small AWS + Terraform labs. Most are written for loc
 
 - Floci emulates AWS locally.
 - Behavior can differ from real AWS.
-- Some labs were verified in a real AWS account instead of Floci when local support was incomplete or not directly exercised.
+- Some labs were verified in a real AWS account instead of Floci when local support was incomplete.
 - This repo is for learning and experimentation, not production.
 
 ## Repo structure
