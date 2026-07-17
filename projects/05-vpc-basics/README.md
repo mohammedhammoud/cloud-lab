@@ -15,6 +15,17 @@ This is a learning-in-public networking lab. It uses Floci locally, so network b
 - Inline `user_data` script starting a small HTTP server
 - Terraform outputs for the network and EC2 instance
 
+## Architecture
+
+```mermaid
+flowchart LR
+    Internet[Internet] --> IGW[Internet Gateway]
+    IGW --> RT[Public route table]
+    RT --> Subnet[Public subnet]
+    Subnet --> SG[Security group]
+    SG --> EC2[EC2 instance]
+```
+
 ## Network flow
 
 ```text

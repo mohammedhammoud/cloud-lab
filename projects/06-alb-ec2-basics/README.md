@@ -20,12 +20,12 @@ This is a learning-in-public lab. It is meant to show how the pieces connect, no
 
 ## Architecture
 
-```text
-Internet
-  -> Application Load Balancer
-  -> Listener :80
-  -> Target Group
-  -> EC2 Instance
+```mermaid
+flowchart LR
+    Internet[Internet] --> ALB[Application Load Balancer]
+    ALB --> Listener[Listener :80]
+    Listener --> TG[Target Group]
+    TG --> EC2[EC2 instance]
 ```
 
 The EC2 instance serves:

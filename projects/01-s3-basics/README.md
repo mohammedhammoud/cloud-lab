@@ -2,6 +2,22 @@
 
 Private S3 bucket lab for Floci.
 
+## Architecture
+
+```mermaid
+flowchart LR
+    Main[Main S3 Bucket]
+    Logs[Log S3 Bucket]
+    Policy[HTTPS-only Bucket Policies]
+    PAB[Public Access Blocks]
+
+    Main -->|Server access logs| Logs
+    Main --> Policy
+    Logs --> Policy
+    Main --> PAB
+    Logs --> PAB
+```
+
 ## Resources
 
 - Main bucket: `01-s3-basics`

@@ -17,6 +17,18 @@ This is a learning-in-public lab. The Terraform models a real AWS event flow, bu
 - S3 bucket notification for object creation under `input/`
 - Terraform outputs for the main resources
 
+## Architecture
+
+```mermaid
+flowchart LR
+    Upload[Upload to input/] --> S3[S3 bucket]
+    S3 --> Event[Object-created event]
+    Event --> Notify[S3 bucket notification]
+    Notify --> Lambda[Lambda function]
+    Lambda --> Read[Read input object]
+    Lambda --> Write[Write processed object to output/]
+```
+
 ## Event flow
 
 ```text

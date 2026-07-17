@@ -18,6 +18,19 @@ This is a learning-in-public lab. It mirrors real IAM building blocks, but Floci
 - Role policy attachment from `app-role-02-iam-basics` to the S3 read-only policy
 - Terraform outputs for the IAM identities
 
+## Architecture
+
+```mermaid
+flowchart LR
+    User[developer user] --> Group[developers group]
+    Group --> Policy[s3_read_only policy]
+    Policy --> S3[S3 read-only access]
+
+    EC2[EC2 service] --> Assume[sts:AssumeRole]
+    Assume --> Role[app_role]
+    Role --> Policy
+```
+
 ## Permission paths
 
 Human access path:
