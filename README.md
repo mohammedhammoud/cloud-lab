@@ -76,6 +76,7 @@ cd projects/01-s3-basics
 - `12-eventbridge` — EventBridge custom bus, rule, Lambda targets, invoke permissions
 - `13-rds-private` — VPC, public EC2, private PostgreSQL RDS, DB subnet group, security groups
 - `14-observability` — EC2 observability pipeline with CloudWatch Agent, logs, metrics, dashboard, alarm, and SNS notifications — verified in real AWS
+- `15-github-oidc` — GitHub Actions OIDC to AWS with IAM OIDC provider, restricted trust policy, and temporary credentials
 
 ## Security and cost
 
