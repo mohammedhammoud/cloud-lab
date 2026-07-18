@@ -27,7 +27,7 @@ flowchart LR
 
 ```text
 aud = sts.amazonaws.com
-sub = repo:mohammedhammoud/cloud-lab:ref:refs/heads/master
+sub = repo:mohammedhammoud/aws-terraform-labs:ref:refs/heads/master
 ```
 
 Only workflows from this repo and branch can assume the role.
@@ -62,7 +62,7 @@ arn:aws:sts::<account-id>:assumed-role/15-github-oidc-oidc/github-oidc-lab
 
 Example run:
 
-https://github.com/mohammedhammoud/cloud-lab/actions/runs/29616651314
+https://github.com/mohammedhammoud/aws-terraform-labs/actions/runs/29616651314
 
 ## Commands
 
