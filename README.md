@@ -77,6 +77,7 @@ cd projects/01-s3-basics
 - `13-rds-private` — VPC, public EC2, private PostgreSQL RDS, DB subnet group, security groups
 - `14-observability` — EC2 observability pipeline with CloudWatch Agent, logs, metrics, dashboard, alarm, and SNS notifications — verified in real AWS
 - `15-github-oidc` — GitHub Actions OIDC to AWS with IAM OIDC provider, restricted trust policy, and temporary credentials
+- `16-ecs-blue-green` — ECS on EC2 with CodeDeploy Blue/Green deployments, blue and green target groups, ALB traffic switching, and automatic rollback
 
 ## Security and cost
 

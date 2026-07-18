@@ -51,6 +51,13 @@ resource "aws_ecs_service" "lab" {
     container_port   = local.container_port
   }
 
+  lifecycle {
+    ignore_changes = [ 
+      task_definition,
+      load_balancer
+     ]
+  }
+
   depends_on = [
     aws_lb_listener.lab,
     aws_iam_role_policy_attachment.ecs_task_execution
