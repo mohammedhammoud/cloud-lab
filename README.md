@@ -1,6 +1,6 @@
 # AWS Terraform Labs
 
-Hands-on AWS labs built with Terraform. Each lab focuses on one concept—like S3, IAM, Lambda, EC2, VPC, ECS, RDS, or EventBridge—so you can learn AWS, Infrastructure as Code, and DevOps by building small examples.
+Public AWS and Terraform learning repo with small labs focused on one concept at a time—like S3, IAM, Lambda, EC2, VPC, ECS, RDS, and EventBridge.
 
 Most labs are designed for local Floci. A few were only verified in AWS where local support was missing.
 
