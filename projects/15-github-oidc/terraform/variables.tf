@@ -10,7 +10,7 @@ variable "region" {
 
 variable "github_repository" {
   type    = string
-  default = "mohammedhammoud/cloud-lab"
+  default = "mohammedhammoud/aws-terraform-labs"
 }
 
 variable "github_branch" {
