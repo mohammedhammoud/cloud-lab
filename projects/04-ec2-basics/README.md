@@ -9,7 +9,7 @@ flowchart LR
     Terraform[Terraform] --> EC2[EC2 instance]
     EC2 --> Container[Floci Docker container]
     Container --> UserData[user_data script]
-    UserData --> File[/tmp/ec2-test.txt]
+    UserData --> File["/tmp/ec2-test.txt"]
     UserData --> CLI[AWS CLI install]
     UserData --> Upload[Upload file to S3]
     Upload --> S3[S3 bucket]
